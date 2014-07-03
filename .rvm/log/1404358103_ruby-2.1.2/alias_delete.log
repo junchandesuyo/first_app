@@ -1,0 +1,71 @@
+[2014-07-02 20:28:23] alias_delete_execute
+alias_delete_execute () 
+{ 
+    for _path in "$rvm_rubies_path" "$rvm_environments_path" "$rvm_wrappers_path";
+    do
+        if [[ -L "$_path/$1" ]]; then
+            \rm -fv "$_path/$1" || return $?;
+        fi;
+    done;
+    __rvm_db_ "$rvm_path/config/alias" "$1" "delete";
+    alias_after_delete_default "$1" || return $?
+}
+current path: /home/junko
+GEM_HOME=/home/junko/.rvm/gems/ruby-2.1.2
+PATH=/home/junko/.rvm/gems/ruby-2.1.2/bin:/home/junko/.rvm/gems/ruby-2.1.2@global/bin:/home/junko/.rvm/rubies/ruby-2.1.2/bin:/home/junko/.rvm/bin:/home/junko/.rbenv/plugins/ruby-build/bin:/home/junko/.rbenv/bin:/home/junko/.rbenv/shims:/home/junko/.rbenv/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games
+GEM_PATH=/home/junko/.rvm/gems/ruby-2.1.2:/home/junko/.rvm/gems/ruby-2.1.2@global
+command(2): alias_delete_execute default
++ for _path in '"$rvm_rubies_path"' '"$rvm_environments_path"' '"$rvm_wrappers_path"'
++ [[ -L /home/junko/.rvm/rubies/default ]]
++ for _path in '"$rvm_rubies_path"' '"$rvm_environments_path"' '"$rvm_wrappers_path"'
++ [[ -L /home/junko/.rvm/environments/default ]]
++ for _path in '"$rvm_rubies_path"' '"$rvm_environments_path"' '"$rvm_wrappers_path"'
++ [[ -L /home/junko/.rvm/wrappers/default ]]
++ __rvm_db_ /home/junko/.rvm/config/alias default delete
++ typeset __db __key __value
++ __db=/home/junko/.rvm/config/alias
++ __key=default
++ shift 2
++ __value=delete
++ case "${__value}" in
++ __rvm_db_remove /home/junko/.rvm/config/alias default
++ [[ -f /home/junko/.rvm/config/alias ]]
++ __rvm_sed -e 's#^default=.*$##' -e '/^$/d' /home/junko/.rvm/config/alias
++ sed -e 's#^default=.*$##' -e '/^$/d' /home/junko/.rvm/config/alias
++ mv -f /home/junko/.rvm/config/alias.new /home/junko/.rvm/config/alias
++ alias_after_delete_default default
++ [[ default == \d\e\f\a\u\l\t ]]
++ for _path in '"$rvm_bin_path"/default_*'
++ [[ -f /home/junko/.rvm/bin/default_* ]]
++ _path='/home/junko/.rvm/bin/default_*'
++ [[ -f /home/junko/.rvm/bin/default_* ]]
++ for _path in '"$rvm_path"/wrappers/default/*' gem irb erb ri rdoc testrb rake ruby bundle
++ _path='*'
++ rm -fv '/home/junko/.rvm/bin/*'
++ for _path in '"$rvm_path"/wrappers/default/*' gem irb erb ri rdoc testrb rake ruby bundle
++ _path=gem
++ rm -fv /home/junko/.rvm/bin/gem
++ for _path in '"$rvm_path"/wrappers/default/*' gem irb erb ri rdoc testrb rake ruby bundle
++ _path=irb
++ rm -fv /home/junko/.rvm/bin/irb
++ for _path in '"$rvm_path"/wrappers/default/*' gem irb erb ri rdoc testrb rake ruby bundle
++ _path=erb
++ rm -fv /home/junko/.rvm/bin/erb
++ for _path in '"$rvm_path"/wrappers/default/*' gem irb erb ri rdoc testrb rake ruby bundle
++ _path=ri
++ rm -fv /home/junko/.rvm/bin/ri
++ for _path in '"$rvm_path"/wrappers/default/*' gem irb erb ri rdoc testrb rake ruby bundle
++ _path=rdoc
++ rm -fv /home/junko/.rvm/bin/rdoc
++ for _path in '"$rvm_path"/wrappers/default/*' gem irb erb ri rdoc testrb rake ruby bundle
++ _path=testrb
++ rm -fv /home/junko/.rvm/bin/testrb
++ for _path in '"$rvm_path"/wrappers/default/*' gem irb erb ri rdoc testrb rake ruby bundle
++ _path=rake
++ rm -fv /home/junko/.rvm/bin/rake
++ for _path in '"$rvm_path"/wrappers/default/*' gem irb erb ri rdoc testrb rake ruby bundle
++ _path=ruby
++ rm -fv /home/junko/.rvm/bin/ruby
++ for _path in '"$rvm_path"/wrappers/default/*' gem irb erb ri rdoc testrb rake ruby bundle
++ _path=bundle
++ rm -fv /home/junko/.rvm/bin/bundle

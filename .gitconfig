@@ -1,0 +1,9 @@
+[color]
+	ui = true
+[user]
+	name = junchandesuyo
+	email = junkowerner@yahoo.com
+[alias]
+	co = checkout
+[core]
+	editor = gedit -w

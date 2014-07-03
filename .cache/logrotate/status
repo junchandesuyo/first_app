@@ -1,0 +1,11 @@
+logrotate state -- version 2
+"/home/junko/.cache/upstart/window-stack-bridge.log" 2014-7-2-20:0:0
+"/home/junko/.cache/upstart/unity-settings-daemon.log" 2014-7-2-20:0:0
+"/home/junko/.cache/upstart/indicator-bluetooth.log" 2014-7-2-20:0:0
+"/home/junko/.cache/upstart/dbus.log" 2014-7-2-20:0:0
+"/home/junko/.cache/upstart/update-notifier-release.log" 2014-7-2-20:0:0
+"/home/junko/.cache/upstart/unity7.log" 2014-7-2-20:0:0
+"/home/junko/.cache/upstart/im-config.log" 2014-7-2-20:0:0
+"/home/junko/.cache/upstart/indicator-power.log" 2014-7-2-20:0:0
+"/home/junko/.cache/upstart/gnome-session-Unity.log" 2014-7-2-20:0:0
+"/home/junko/.cache/upstart/indicator-sound.log" 2014-7-2-20:0:0

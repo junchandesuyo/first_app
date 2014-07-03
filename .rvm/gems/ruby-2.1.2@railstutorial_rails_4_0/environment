@@ -1,0 +1,7 @@
+export PATH="/home/junko/.rvm/gems/ruby-2.1.2@railstutorial_rails_4_0/bin:/home/junko/.rvm/gems/ruby-2.1.2@global/bin:/home/junko/.rvm/rubies/ruby-2.1.2/bin:$PATH"
+export GEM_HOME='/home/junko/.rvm/gems/ruby-2.1.2@railstutorial_rails_4_0'
+export GEM_PATH='/home/junko/.rvm/gems/ruby-2.1.2@railstutorial_rails_4_0:/home/junko/.rvm/gems/ruby-2.1.2@global'
+export MY_RUBY_HOME='/home/junko/.rvm/rubies/ruby-2.1.2'
+export IRBRC='/home/junko/.rvm/rubies/ruby-2.1.2/.irbrc'
+unset MAGLEV_HOME
+unset RBXOPT
